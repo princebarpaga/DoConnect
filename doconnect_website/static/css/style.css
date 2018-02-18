@@ -165,7 +165,25 @@ h2
     margin-top: 90px;
     text-align: center;
 }
+.button4
+{
+    margin-top: 90px;
+    max-height: 25px;
+    text-align: center;
+}
 
+.btn2
+{
+    border: 1px solid white;
+    padding: 40px 260px;
+    color: azure;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 25px;
+    
+    font-family: "Roboto", sans-serif;
+
+}
 
 .btn
 {
