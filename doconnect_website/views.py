@@ -45,7 +45,7 @@ def patient_profile(request, patient_id):
 	return render(request, 'doconnect_website/patient_profile.html',{})
 
 def questions(request):
-	return render(request, 'doconnect_website/question_page/index.html',{})
+	return render(request, 'doconnect_website/index.html',{})
 
 
 def questionsend(request):
@@ -67,4 +67,4 @@ def questionsend(request):
 		return render(request, 'doconnect_website/question_page/index.html/',context)
 
 def finalP(request):
-	return render(request, 'doconnect_website/frontpage.html', {})
+	return render(request, 'doconnect_website/patient_profile.html', {})
