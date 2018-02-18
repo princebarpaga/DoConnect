@@ -26,4 +26,8 @@ function gologin() {
 	console.log(username);
 	console.log(pass);
 
+	$.ajax({
+		ulr: ''
+	})
+
 }
