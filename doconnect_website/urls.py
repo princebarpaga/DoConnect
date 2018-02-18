@@ -18,4 +18,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
+    url(r'^patient/$', views.patient ,name='patient'),
+    url(r'^doctor/$', views.doctor, name='doctor'),
 ]
