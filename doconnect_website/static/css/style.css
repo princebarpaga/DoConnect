@@ -62,7 +62,6 @@ header
     margin: 0 auto;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 
 }
 
@@ -87,19 +86,18 @@ header
     font-size: 15px;
 }
 
-.main-nav li a:hover
-{
-    border: 1px solid white;
-    background-color: darkturquoise;
-    transition: all 0.5 ease-in;
-}
 
 .main-nav li.active a
 {
     border: 1px solid white;
 }
 
-
+.main-nav li a:hover
+{
+    border: 1px solid white;
+    background-color: darkturquoise;
+    transition: all 0.5 ease-in;
+}
 
 .logo img
 {
@@ -139,7 +137,7 @@ h1
     font-size: 40px;
     font-family: "Roboto", monospace;
     margin-left: 400px;
-    margin-top: 160px;
+    margin-top: -590px;
 }
 
 h2
@@ -158,13 +156,13 @@ h2
 
 .button2
 {
-    margin-top: 110px;
+    margin-top: 90px;
     text-align: center;
 }
 
 .button3
 {
-    margin-top: 110px;
+    margin-top: 90px;
     text-align: center;
 }
 
@@ -178,25 +176,7 @@ h2
     margin-right: 5px;
     font-size: 40px;
     text-transform: uppercase;
-}
-
-
-.btn-one
-{
     font-family: "Roboto", sans-serif;
-    
-}
-
-.btn-two
-{
-    font-family: "Roboto", sans-serif;
-    
-}
-
-.btn-three
-{
-    font-family: "Roboto", sans-serif;
-    
 }
 
 .btn-one:hover
@@ -216,13 +196,3 @@ h2
     background-color:darkturquoise;
     transition: all 0.5 ease-in;
 }
-
-
-
-
-
-
-
-
-
-
