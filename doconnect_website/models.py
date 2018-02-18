@@ -21,6 +21,8 @@ class Post(models.Model):
 class Patient(models.Model):
     username = models.CharField(max_length=200)
     password = models.CharField(max_length=200)
+    def __str__(self):
+        return str(self.id)
 
 class Doctor(models.Model):
     username = models.CharField(max_length=200)

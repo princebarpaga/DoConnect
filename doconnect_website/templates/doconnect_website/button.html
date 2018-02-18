@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load staticfiles %}
+		<title> Appointment </title>
+		<link href="{% static 'css/style3.css' %}" rel="stylesheet" type="text/css"
+	</head>		
+					<body>
+						<header>
+						<h1> Book an Appointment</h1>
+						<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+						<p>
+							<label>Name 
+								<input type="text" name="customer_name" required>
+							</label>
+						</p>
+							<p>
+								<label>Email 
+									<input type="email" name="email_address">
+									</label>
+							</p>
+								<p>
+									<label>Enquiry Regarding 
+										<select id="pickup_place" name="pickup_place">
+											<option value="" selected="selected">Select One</option>
+											<option value="illness1" >Mental Health</option>
+											<option value="illness1" >Body Pain</option>
+											<option value="illness1" >Injury</option>
+										</select>
+									</label>
+								</p>
+								<p>
+									<label>Additional Notes
+
+										<textarea name="comments" maxlength="500"></textarea>
+									</label>
+								</p>
+
+								<fieldset>
+									<legend>Which day would you like to book an appointment?</legend>
+									<p><label class="choice"> <input type="radio" name="taxi" required value="car"> Monday </label></p>
+									<p><label class="choice"> <input type="radio" name="taxi" required value="van"> Tuesday </label></p>
+									<p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk">Friday</label></p>
+									</fieldset>
+								<p>
+									<button  onclick="myFunction()">Submit Enquiry</button>
+								</p>
+							</form>
+							</header>
+						</body>
+					</html>
