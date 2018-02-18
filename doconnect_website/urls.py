@@ -24,4 +24,9 @@ urlpatterns = [
     url(r'^patient_login/$', views.patient_login, name='patient_login'),
     url(r'^views.py$', views.validate_username, name='validate_username'),
     url(r'^patient_profile/(?P<patient_id>[0-9]+)/$', views.patient_profile), 
+    url(r'^index.html/$', views.questionsend, name = 'index'),
+
+    url(r'^questions$', views.questions, name = 'questions'),
+    url(r'^index.html/patient_profilee/$', views.finalP, name = 'patient_profilee'),
+    # url(r'^patient_profilee/$', views.finalP, name = 'questions')
 ]
