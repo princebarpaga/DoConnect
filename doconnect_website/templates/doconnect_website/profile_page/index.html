@@ -1,6 +1,7 @@
 <html>
     <head>
-        <link href="question_page.css" rel="stylesheet" type="text/css"
+        {% load staticfiles %}
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
         <script src = "https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script type="text/javascript" src="script.js"></script>
         
@@ -10,7 +11,7 @@
             <header>
                 <div class="row">
                     <div class="logo">
-                        <img src="logo.png">
+                        <img src="{% static 'pics/logo.png' %}">
                     </div>
                     <ul class="main-nav">
                         <li class="active"><a href=""> Overview </a></li>
