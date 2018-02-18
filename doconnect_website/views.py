@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .forms import PostForm
+from .models import Patient
+
 
 # Create your views here.
 def post_list(request):
@@ -15,4 +17,11 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 
 def patient_login(request):
+	return render(request, 'doconnect_website/patient_profile.html',{})
+
+def validate_username(request):
+	uname = request.GET.get('username')
+	pword = request.GET.get('password')
+	p = Patient(username = uname, password = pword)
+	p.save()
 	return render(request, 'doconnect_website/patient_profile.html',{})

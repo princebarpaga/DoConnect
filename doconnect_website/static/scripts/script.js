@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$(".button4").on('click', function() {
+	$("#plogin").on('click', function() {
 		var username = $('#id_username').val();
 		var password = $('#id_password').val();
 
