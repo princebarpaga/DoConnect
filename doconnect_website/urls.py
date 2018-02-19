@@ -18,4 +18,15 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
+    url(r'^patient/$', views.patient ,name='patient'),
+    url(r'^doctor/$', views.doctor, name='doctor'),
+    url(r'^post/new/$', views.post_new, name='post_new'),
+    url(r'^patient_login/$', views.patient_login, name='patient_login'),
+    url(r'^views.py$', views.validate_username, name='validate_username'),
+    url(r'^patient_profile/(?P<patient_id>[0-9]+)/$', views.patient_profile), 
+    url(r'^index.html/$', views.questionsend, name = 'index'),
+
+    url(r'^questions$', views.questions, name = 'questions'),
+    url(r'^index.html/patient_profilee/$', views.finalP, name = 'patient_profilee'),
+    # url(r'^patient_profilee/$', views.finalP, name = 'questions')
 ]

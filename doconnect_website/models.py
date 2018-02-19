@@ -18,3 +18,18 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+class Patient(models.Model):
+    username = models.CharField(max_length=200)
+    password = models.CharField(max_length=200)
+    def __str__(self):
+        return str(self.id)
+
+class Question(models.Model):
+    userid = models.IntegerField()
+    userquestion = models.CharField(max_length=200)
+    priorityid = models.IntegerField()
+
+class Doctor(models.Model):
+    username = models.CharField(max_length=200)
+    password = models.CharField(max_length=200)
+

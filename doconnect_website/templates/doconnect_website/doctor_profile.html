@@ -1,7 +1,7 @@
 <html>
     <head>
         {% load staticfiles %}
-        <title>DoConnect - Home</title>
+        <title>DoConnect - Doctor Profile</title>
         <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
     </head>
         <body>
@@ -12,24 +12,28 @@
                         <img src="{% static 'pics/logo.png' %}">
                     </div>
                     <ul class="main-nav">
-                        <li class="active"><a href=""> HOME </a></li>
-                        
-                        <li><a href=""> CONTACT </a></li>
-                        <li><a href=""> ABOUT </a></li>
+                        <li class="active"><a href=""> Overview </a></li>
+                        <li><a href=""> Doctor Profile </a>
+                        </li>
+                        <li><a href=""> Tech Help </a>
+                        </li>
                     </ul>
                 </div>
+                
             </header>
-                <div class="greetings">
-                <h1>Hello! I am a...</h1>
+            
+            <div class="greetings">
+                <h1>Welcome Back to Your Personal Workspace!</h1>
                 <div class="button1">
-                    <a href="{% url 'patient' %}" class="btn btn-one"> PATIENT </a>
+                    <a href="" class="btn btn-one"> View My Current Schedule </a>
                 </div>
                 <div class="button2">
-                    <a href="{% url 'doctor' %}" class="btn btn-two"> DOCTOR </a>
+                    <a href="" class="btn btn-two"> Add/Cancel Availabilities </a>
                 </div>
                 <div class="button3">
-                    <a href="" class="btn btn-three"> SERVICE </a>
+                    <a href="" class="btn btn-three"> View Questions </a>
                 </div>
             </div>
+            
         </body>
 </html> 

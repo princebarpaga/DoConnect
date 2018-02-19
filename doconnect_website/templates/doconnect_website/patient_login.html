@@ -2,7 +2,10 @@
     <head>
         {% load staticfiles %}
         <title>DoConnect - Patient Login</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{% static 'scripts/script.js'%}"></script>
         <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+        {% block stylesheet %}{% endblock %}
     </head>
         <body>
             {% load staticfiles %}
@@ -20,17 +23,29 @@
       
             </header>
                       <div class="container">
-                          <img src="userlogin.png">
+                          <img src="{% static 'pics/userlogin.png' %}">
                           <h2>Patient Login</h2>
-                    <form>
-                        <div class="form-input">
-                            <input type="text" name="username" placeholder="Enter Username">
+
+                   
+                    <form method='POST'>
+                        {% csrf_token %}
+                        {{ patientSignUpForm.as_p }}
+
+                        <div class="button4">
+                            <button type="submit">SUBMIT</button>
+                        </div>
+                        <!--<div class="form-input">
+                            <input id='id_username' type="text" name="username" placeholder="Enter Username">
                         </div>
                         <div class="form-input">
-                            <input type="password" name="password" placeholder="Enter Password">
+                            <input id='id_password' type="password" name="password" placeholder="Enter Password">
                         </div>
-                        <input type="submit" name="submit" value="LOGIN" class="btn-login"><br>
-                        <a href="#">Forget password?</a>
+                        <div class="button4">
+                            <a href="{% url 'patient_login' %}" class="btn btn-two"> DOCTOR </a>
+                            <button href="{% url 'patient_login' %}" id="plogin">Log in</button>
+                        </div>-->
+                        <!--<input href="{% url 'doctor' %}" type="submit" name="submit" value="LOGIN" class="btn-login"><br>
+                        <a href="#">Forget password?</a>-->
                     </form>
                 </div>
         </body>
